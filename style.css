@@ -1,0 +1,247 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #9599DF;
+    padding: 10px 50px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.brand {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: white;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.navbar li a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:link {
+    color: inherit;
+}
+
+.navbar li a:hover {
+    border-bottom: 1px solid white;
+}
+
+section {
+    background-color: #FBEBFF;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    font-size: 60px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.div1 {
+    grid-area: 1 / 2 / 2 / 3;
+    background: url('Img/1.png');
+}
+
+.div2 {
+    grid-area: 1 / 3 / 2 / 4;
+    background: url('Img/2.png');
+}
+
+.div3 {
+    grid-area: 1 / 4 / 2 / 5;
+    background: url('Img/3.png');
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+    background: url('Img/4.png');
+}
+
+.div5 {
+    grid-area: 2 / 3 / 3 / 4;
+    background: url('Img/5.png');
+}
+
+.div6 {
+    grid-area: 2 / 4 / 3 / 5;
+    background: url('Img/6.png');
+}
+
+.div7 {
+    grid-area: 3 / 2 / 4 / 3;
+    background: url('Img/7.png');
+}
+
+.div8 {
+    grid-area: 3 / 3 / 4 / 4;
+    background: url('Img/8.png');
+}
+
+.div9 {
+    grid-area: 3 / 4 / 4 / 5;
+    background: url('Img/9.png');
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #a18a96 center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #D1D5EB;
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px transparent;
+}
+
+.card_title {
+    color: #6A515E;
+    line-height: 15px;
+}
+
+.card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    margin-right: 25px;
+    line-height: 25px;
+}
+
+.card_description a {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    background-color: #E0D3E3;
+    text-decoration: none;
+}
+
+.card_description a:hover {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    background-color: #B6ACD4;
+    color: white;
+}
+
+.card:hover .card_content {
+    transform: translateY(0);
+}
+
+.card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+hr {
+    width: 75%;
+    text-align: center;
+    background: inherit;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.div11 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div12 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div13 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.div14 {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+footer {
+    background-color: #DDCFF7;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+footer .logo img{
+    border: 1px transparent;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+footer ul a{
+    text-decoration: none;
+}
