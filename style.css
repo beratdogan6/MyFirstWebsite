@@ -22,12 +22,16 @@ body {
 }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     list-style-type: none;
     color: white;
-    margin: auto;
-    justify-content: space-between;
+    /* margin: auto; */
+    /* justify-content: space-between; */
+}
+.navbar li {
+    display: inline-block;
+    align-items: center;
 }
 
 .navbar li a {
