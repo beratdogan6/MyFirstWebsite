@@ -22,16 +22,13 @@ body {
 }
 
 .navbar ul {
-    /* display: flex; */
-    /* flex-direction: row; */
     list-style-type: none;
     color: white;
-    /* margin: auto; */
-    /* justify-content: space-between; */
+    margin: auto;
 }
 .navbar li {
     display: inline-block;
-    align-items: center;
+    font-weight: bold;
 }
 
 .navbar li a {
@@ -48,7 +45,9 @@ a:link {
 }
 
 .navbar li a:hover {
-    border-bottom: 1px solid white;
+    color: black;
+    border-bottom: 1.5px solid black;
+    transition: .4s;
 }
 
 section {
